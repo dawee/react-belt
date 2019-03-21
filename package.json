@@ -1,0 +1,39 @@
+{
+  "name": "@dawee/react-belt",
+  "version": "0.0.1",
+  "description": "Helper functions for writing React component in Reason",
+  "scripts": {
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawee/react-belt.git"
+  },
+  "keywords": [
+    "reason",
+    "bucklescript",
+    "react",
+    "helper",
+    "belt"
+  ],
+  "author": "dawee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawee/react-belt/issues"
+  },
+  "homepage": "https://github.com/dawee/react-belt",
+  "files": [
+    "src/",
+    "bsconfig.json"
+  ],
+  "devDependencies": {
+    "bs-platform": "5.0.0",
+    "react": "16.8.4",
+    "reason-react": "0.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "reason-react": "^0.6.0"
+  }
+}
