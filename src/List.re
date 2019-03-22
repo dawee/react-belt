@@ -1,11 +1,11 @@
 let keep = (array, predicate) =>
   Belt.List.keep(array, predicate)
-  ->Array.of_list
+  ->Belt.List.toArray
   ->ReasonReact.array;
 
 let keepMap = (array, predicate) =>
   Belt.List.keepMap(array, predicate)
-  ->Array.of_list
+  ->Belt.List.toArray
   ->ReasonReact.array;
 
 let keepSome = array =>
@@ -13,10 +13,10 @@ let keepSome = array =>
 
 let map = (array, predicate) =>
   Belt.List.map(array, predicate)
-  ->Array.of_list
+  ->Belt.List.toArray
   ->ReasonReact.array;
 
-let reduce = (array, predicate) =>
-  Belt.List.reduce(array, predicate)
-  ->Array.of_list
+let reduce = (array, initial, predicate) =>
+  Belt.List.reduce(array, initial, predicate)
+  ->Belt.List.toArray
   ->ReasonReact.array;

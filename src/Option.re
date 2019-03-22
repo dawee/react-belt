@@ -1,3 +1,1 @@
-let map = Belt.Option.mapWithDefault(ReasonReact.null);
-
-let fromBool = value => value ? Some(()) : None;
+let map = (optional, predicate) => optional->Belt.Option.mapWithDefault(ReasonReact.null, predicate);

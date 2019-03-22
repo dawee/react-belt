@@ -1,9 +1,9 @@
-let keep = (array, predicate) => Belt.Array.keep(array, predicate)->ReasonReact.array; 
+let keep = (array, predicate) => array->Belt.Array.keep(predicate)->ReasonReact.array; 
 
-let keepMap = (array, predicate) => Belt.Array.keepMap(array, predicate)->ReasonReact.array;
+let keepMap = (array, predicate) => array->Belt.Array.keepMap(predicate)->ReasonReact.array;
 
-let keepSome = array => keepMap(array, Fun.identity);
+let keepSome = array => array->keepMap(Fun.identity);
 
-let map = (array, predicate) => Belt.Array.map(array, predicate)->ReasonReact.array;
+let map = (array, predicate) => array->Belt.Array.map(predicate)->ReasonReact.array;
 
-let reduce = (array, predicate) => Belt.Array.reduce(array, predicate)->ReasonReact.array;
+let reduce = (array, initial, predicate) => array->Belt.Array.reduce(initial, predicate)->ReasonReact.array;
